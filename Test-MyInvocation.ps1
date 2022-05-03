@@ -281,7 +281,7 @@ function Test-MyInvocation {
       Write-Host "`nBelow is the Output from the '`$MyInvocation | Format-List' command`n" -BackgroundColor Black -ForegroundColor Yellow
       $MyInvocation | Format-List
 
-      # INTERESTINGLY ENOUGH... this Out-File line, nore the Write-Host lines, etc. are ever run, even if this block seems to be matched... 
+      # INTERESTINGLY ENOUGH... this Out-File line, nor the Write-Host lines, etc. are ever run, even if this block seems to be matched... 
       ### "Looks like this was Dot Sourced" | Out-File "Test_MyInvocation_was_DotSourced_$(Get-Date -Format 'yyyy-MM-dd_HHmm').txt"
 
     }
